@@ -5,7 +5,7 @@ using namespace std;
 int n;
 
 void selectionSort(int arr[]) {
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) { // selectionSort support partialSort with change n to how much smallest number we want find
         int minIndex = i;
         for (int j = i + 1; j < n; j++) {
            if (arr[j] < arr[minIndex]) {
